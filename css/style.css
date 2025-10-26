@@ -1,0 +1,59 @@
+/* Adding Font */
+@font-face {
+    font-family: 'Norse';
+    src: url('../font/Norse-Bold.woff2') format('woff2'),
+        url('../font/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    border: 2px solid black
+}
+
+/* TODO Fix Sizing */
+.background {
+    background-image: url("/img/form-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid black
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
