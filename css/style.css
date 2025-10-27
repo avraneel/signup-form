@@ -8,6 +8,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.woff2') format('woff2'),
+        url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* CSS Resets */
 * {
     margin: 0;
@@ -23,37 +33,77 @@ textarea {
     font-size: 100%;
 }
 
-
 .page {
-    display: flex;
     min-height: 100vh;
+    display: flex;
     border: 2px solid black
 }
 
-/* TODO Fix Sizing */
 .background {
+    flex: auto;
     background-image: url("/img/form-background.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid black
 }
 
 .content {
+    flex: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 2px solid black;
 }
 
-.signup-form {
+.headline {
+    flex: auto;
     display: flex;
     flex-direction: column;
-    border: 2px solid green
+    justify-content: end;
+    padding: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.signup-form {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid green;
+}
+
+.formfields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column; 
+}
+
+.login {
+    flex: auto;
 }
 
 .row1, .row2, .row3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.img-credit, .background a {
+    color: white;
+}
+
+.submit {
+    background-color: #596D48;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: 1px solid #596D48;
+    border-radius: 10px;
 }
