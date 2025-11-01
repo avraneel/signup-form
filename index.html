@@ -15,49 +15,64 @@
 
         <div class="content">
             <div class="headline">
+                <strong>
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <br>
                 <p>You <em>know</em> you want to.</p>
+                </strong>
             </div>
 
-            <form action="success.html" method="post" name="signup-form" class="signup-form">
-                <fieldset>
-                    <lengend>Let's do this!</lengend>
-                    <div class="formfields">
-                        <div class="row1">
-                            <div class="form-item">
-                                <label for="first-name">FIRST NAME</label>
-                                <input type="text" name="first-name" id="first-name">
+            <div class="form-main">
+                 <form action="success.html" method="post" name="signup-form" class="signup-form">
+                    <fieldset>
+                        <div class="form-container">
+                            <div class="form-label">
+                                <lengend><strong>Let's do this!</strong></lengend>
                             </div>
-                            <div class="form-item">
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" name="last-name" id="last-name">
-                            </div> 
+                            <div class="formfields">
+                                <div class="row1">
+                                    <div class="form-item">
+                                        <label for="first-name">FIRST NAME</label>
+                                        <input type="text" name="first-name" id="first-name">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="last-name">LAST NAME</label>
+                                        <input type="text" name="last-name" id="last-name">
+                                    </div> 
+                                </div>
+                                <div class="row2">
+                                    <div class="form-item">
+                                        <label for="email">EMAIL</label>
+                                        <input type="email" name="email" id="email">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="phone-number">PHONE NUMBER</label>
+                                        <input type="number" name="phone-number" id="phone-number">
+                                    </div>
+                                </div>
+                                <div class="row3">
+                                    <div class="form-item">
+                                        <label for="password">PASSWORD</label>
+                                        <input type="password" name="password" id="password">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                                        <input type="password" name="confirm-password" id="confirm-password">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row2">
-                            <div class="form-item">
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div class="form-item">
-                                <label for="phone-number">PHONE NUMBER</label>
-                                <input type="number" name="phone-number" id="phone-number">
-                            </div>
-                        </div>
-                        <div class="row3">
-                            <div class="form-item">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
-                            </div>
-                            <div class="form-item">
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm-password" id="confirm-password">
-                            </div>
-                        </div>
+                    </fieldset>
+                </form>
+            </div>
+           
+            <div class="bottom">
+                    <div class="button-container">
+                        <button type="submit" class="submit">Create Account</button>
                     </div>
-                </fieldset>
-                <button type="submit" class="submit">Create Account</button>
-            </form>
-            <div class="login">Already have an account? <a href="success.html">Log In</div>
+                    <div class="login">Already have an account? <a href="success.html">Log In</div>
+            </div>
+            
     </div>
 
     </div>
